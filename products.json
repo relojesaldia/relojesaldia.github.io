@@ -1,12 +1,72 @@
 [
   {
+    "id": "xiaomi-band-9-pro",
     "name": "XIAOMI Smart Band 9 Pro",
-    "price": "$52.63",
-    "url": "https://amzn.to/4uYCXZ2"
+    "price": "60.62 USD",
+    "rating": 4.6,
+    "description": "XIAOMI Smart Band 9 Pro - Pulsera de Actividad, autonomía de hasta 21 días, Pantalla AMOLED de 1,74 pulgadas con tasa de refresco de 60 Hz, 5ATM, App Mi Fitness, Plata (Versión ES)",
+    "img": "https://m.media-amazon.com/images/I/61wimACne+L._AC_SL1500_.jpg",
+    "url": "https://amzn.to/4bXkAv2",
+    "specs": [
+      "Autonomía ultra larga de hasta 21 días",
+      "Gestión de salud multidimensional",
+      "Experiencia de usuario mejorada"
+    ]
   },
   {
-    "name": "XIAOMI Smart Band 7 Pro",
-    "price": "$21.73",
-    "url": "https://amzn.to/3PDFbwX"
+    "id": "xiaomi-smartband-10",
+    "name": "Xiaomi Smartband 10",
+    "price": "42.50 USD",
+    "rating": 4.6,
+    "description": "Xiaomi Smartband 10, Pantalla AMOLED de 1,72”, Carga rápida, 150+ Modos Deportivos, Monitorización de Salud y sueño, HyperOS 2.0, Impermeable 5ATM, Brújula",
+    "img": "https://m.media-amazon.com/images/I/51bkPDf8dUL._AC_SL1000_.jpg",
+    "url": "https://amzn.to/4bOPOUV",
+    "specs": [
+      "Carga Solar",
+      "Mapas",
+      "22 días batería"
+    ]
+  },
+  {
+    "id": "huawei-band-10",
+    "name": "HUAWEI Band 10",
+    "price": "33.40 USD",
+    "rating": 4.4,
+    "description": "HUAWEI Band 10 Smartwatch, Monitorización de Actividad Física con IA, Análisis del Sueño a Nivel Profesional, VFC Promedio y Datos sobre el Sueño, iOS & Android, 14 Días de Autonomía, Negro",
+    "img": "https://m.media-amazon.com/images/I/61VZkWamWRL._AC_SL1500_.jpg",
+    "url": "https://amzn.to/4c9mXMt",
+    "specs": [
+      "Cómoda de usar durante todo el día",
+      "Análisis del sueño a nivel profesional",
+      "Monitorización con IA"
+    ]
+  },
+  {
+    "id": "huawei-band-11-pro",
+    "name": "HUAWEI Band 11 Pro",
+    "price": "86.26 USD",
+    "rating": 4.5,
+    "description": "HUAWEI Band 11 Pro Smartwatch, 1,62″ AMOLED 2000 Nits, Posicionamiento GNSS Independiente, Frecuencia Cardíaca y SPO₂, Bienestar Emocional, 5 ATM Resistencia al Agua, Bluetooth, Android & iOS",
+    "img": "https://m.media-amazon.com/images/I/717glctSu8L._AC_SL1500_.jpg",
+    "url": "https://amzn.to/4rZwiLu",
+    "specs": [
+      "Un Diseño Metálico Limpio tan Delgado como Es Posible",
+      "Un Gran Avance en Precisión Deportiva GNSS",
+      "Seguimiento del Sueño Mejorado"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-band-9-active",
+    "name": "XIAOMI Smart Band 9 Active",
+    "price": "23.02 USD",
+    "rating": 4.1,
+    "description": "XIAOMI Smart Band 9 Active - Pulsera de Actividad, autonomía de hasta 18 días, Pantalla TFT de 1,47 pulgadas con tasa de refresco de 60 Hz, 5ATM, App Mi Fitness, (Versión ES)",
+    "img": "https://m.media-amazon.com/images/I/61W47BWxlCL._AC_SL1500_.jpg",
+    "url": "https://amzn.to/4uZXi03",
+    "specs": [
+      "Pantalla TFT de 1,47 pulgadas para una interacción fluida",
+      "Hasta 18 días de duración de la batería para un uso diario normal",
+      "Vigilancia de salud constante"
+    ]
   }
 ]

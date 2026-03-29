@@ -1,15 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Relojes al Día | Mejores Smartwatches</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relojes al Día | Las Mejores Reseñas de Smartwatches</title>
+    <meta name="description" content="Descubre los mejores smartwatches y relojes inteligentes del momento con nuestras reseñas detalladas y comparativas expertas.">
+    <link rel="stylesheet" href="index.css">
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<h1>⌚ Mejores Smartwatches Calidad Precio</h1>
+<header>
+    <a href="#" class="logo">⌚ Relojes al Día</a>
+    <nav>
+        <!-- Aquí se pueden añadir enlaces de navegación si es necesario -->
+    </nav>
+</header>
 
-<div id="app"></div>
+<section class="hero">
+    <h1>Domina tu Tiempo</h1>
+    <p>Analizamos los mejores relojes y smartwatches del mercado para que elijas el compañero perfecto para tu muñeca. Reseñas expertas, comparativas reales y las mejores ofertas.</p>
+</section>
+
+<main class="container">
+    <div id="app" class="product-grid">
+        <!-- Los productos se cargarán aquí dinámicamente -->
+        <div class="loading">Cargando los mejores relojes...</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Relojes al Día. Todos los derechos reservados.</p>
+    <p style="font-size: 0.8rem; margin-top: 10px; color: var(--text-muted);">Como Afiliado de Amazon, percibo dinero con las compras elegibles.</p>
+</footer>
 
 <script src="app.js"></script>
+<script>
+    // Inicializar iconos de Lucide
+    lucide.createIcons();
+</script>
 
 </body>
 </html>
