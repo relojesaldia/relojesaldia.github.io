@@ -7,13 +7,35 @@ async function loadProducts() {
     
     let html = '';
 
-    products.forEach(p => {
+    products.forEach((p, pIndex) => {
       const stars = '★'.repeat(Math.floor(p.rating)) + '☆'.repeat(5 - Math.floor(p.rating));
       const specsHtml = p.specs.map(s => `<span class="spec-badge">${s}</span>`).join('');
+      
+      // Construir el HTML del carrusel
+      const imagesHtml = p.images.map((img, i) => `
+        <img src="${img}" 
+             alt="${p.name} - Vista ${i + 1}" 
+             class="card-img ${i === 0 ? 'active' : ''}" 
+             data-index="${i}"
+             onerror="this.src='https://via.placeholder.com/300x250?text=Reloj+Premium'">
+      `).join('');
+
+      const dotsHtml = p.images.length > 1 ? `
+        <div class="carousel-dots">
+          ${p.images.map((_, i) => `<span class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>`).join('')}
+        </div>
+      ` : '';
 
       html += `
-        <article class="card">
-          <img src="${p.img}" alt="${p.name}" class="card-img" onerror="this.src='https://via.placeholder.com/300x250?text=Reloj+Premium'">
+        <article class="card" data-id="${p.id}" data-current="0" data-total="${p.images.length}">
+          <div class="carousel-container">
+            ${imagesHtml}
+            ${p.images.length > 1 ? `
+              <button class="carousel-btn prev" onclick="changeImage('${p.id}', -1)"><i data-lucide="chevron-left"></i></button>
+              <button class="carousel-btn next" onclick="changeImage('${p.id}', 1)"><i data-lucide="chevron-right"></i></button>
+            ` : ''}
+            ${dotsHtml}
+          </div>
           <h2>${p.name}</h2>
           <div class="rating">${stars} <span>(${p.rating})</span></div>
           <div class="price">${p.price}</div>
@@ -33,6 +55,9 @@ async function loadProducts() {
     // Inyectar datos estructurados (JSON-LD) para SEO
     injectJSONLD(products);
 
+    // Inicializar carruseles y autoplay
+    initCarousels();
+
     // Re-inicializar iconos de Lucide
     if (window.lucide) {
       window.lucide.createIcons();
@@ -42,6 +67,49 @@ async function loadProducts() {
     app.innerHTML = `<div class="error">Error al cargar los productos. Inténtalo de nuevo más tarde.</div>`;
     console.error('Error fetching products:', error);
   }
+}
+
+function initCarousels() {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    const total = parseInt(card.dataset.total);
+    if (total <= 1) return;
+
+    let intervalId = setInterval(() => {
+      changeImage(card.dataset.id, 1);
+    }, 4000); // 4 segundos por imagen
+
+    // Pausar al pasar el ratón
+    card.addEventListener('mouseenter', () => clearInterval(intervalId));
+    card.addEventListener('mouseleave', () => {
+      intervalId = setInterval(() => {
+        changeImage(card.dataset.id, 1);
+      }, 4000);
+    });
+  });
+}
+
+window.changeImage = function(productId, direction) {
+  const card = document.querySelector(`.card[data-id="${productId}"]`);
+  if (!card) return;
+
+  let current = parseInt(card.dataset.current);
+  const total = parseInt(card.dataset.total);
+  
+  current = (current + direction + total) % total;
+  card.dataset.current = current;
+
+  // Actualizar imágenes
+  const imgs = card.querySelectorAll('.card-img');
+  imgs.forEach((img, i) => {
+    img.classList.toggle('active', i === current);
+  });
+
+  // Actualizar puntos
+  const dots = card.querySelectorAll('.dot');
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === current);
+  });
 }
 
 function injectJSONLD(products) {
@@ -55,7 +123,7 @@ function injectJSONLD(products) {
         "@type": "Product",
         "name": p.name,
         "description": p.description,
-        "image": p.img,
+        "image": p.images[0],
         "url": p.url,
         "offers": {
           "@type": "Offer",
@@ -66,7 +134,7 @@ function injectJSONLD(products) {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": p.rating,
-          "reviewCount": Math.floor(Math.random() * 50) + 10 // Simulación para SEO
+          "reviewCount": Math.floor(Math.random() * 50) + 10
         }
       }
     }))
