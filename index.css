@@ -36,7 +36,7 @@ h1, h2, h3 {
 }
 
 header {
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,13 +58,13 @@ header {
 }
 
 .hero {
-    padding: 80px 5% 40px;
+    padding: 40px 5% 20px;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 8vw, 4.5rem);
-    margin-bottom: 24px;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    margin-bottom: 16px;
     color: var(--text-main);
     line-height: 1.1;
     letter-spacing: -2px;
@@ -81,12 +81,12 @@ header {
     font-size: 1.1rem;
     color: var(--text-muted);
     max-width: 700px;
-    margin: 0 auto 40px;
+    margin: 0 auto 24px;
 }
 
 .container {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 0 20px;
 }
 
@@ -204,7 +204,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .hero { padding: 60px 5% 30px; }
+    .hero { padding: 30px 5% 15px; }
     .hero h1 { font-size: 2.8rem; }
 }
 
