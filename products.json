@@ -15,7 +15,7 @@
   },
   {
     "id": "xiaomi-smartband-10",
-    "name": "Xiaomi Smartband 10",
+    "name": "XIAOMI Smartband 10",
     "price": "42.50 USD",
     "rating": 4.6,
     "description": "Xiaomi Smartband 10, Pantalla AMOLED de 1,72”, Carga rápida, 150+ Modos Deportivos, Monitorización de Salud y sueño, HyperOS 2.0, Impermeable 5ATM, Brújula",
@@ -67,6 +67,20 @@
       "Pantalla TFT de 1,47 pulgadas para una interacción fluida",
       "Hasta 18 días de duración de la batería para un uso diario normal",
       "Vigilancia de salud constante"
+    ]
+  },
+  {
+    "id": "xiaomi-redmi-watch-5-active",
+    "name": "XIAOMI Redmi Watch 5 Active",
+    "price": "33.96 USD",
+    "rating": 4.5,
+    "description": "XIAOMI Redmi Watch 5 Active, Llamadas Bluetooth, Pantalla LCD de 2 Pulgadas, Monitor de frecuencia cardíaca, 140 Modos Deportivos, hasta 18 días de autonomía",
+    "img": "https://m.media-amazon.com/images/I/6138IWGtvHL._AC_SL1500_.jpg",
+    "url": "https://amzn.to/4tb4J2L",
+    "specs": [
+      "Pantalla AMOLED Ultra grande de 1.96 pulgadas",
+      "Batería de larga duración; hasta 18 días en modo estándar",
+      "Seguimiento avanzado de salud y entrenamiento"
     ]
   }
 ]
