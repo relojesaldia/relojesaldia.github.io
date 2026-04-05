@@ -87,15 +87,46 @@ header {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+    width: 100%;
+    padding: 20px;
+    max-width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
 
 .card {
@@ -123,6 +154,23 @@ header {
     margin-bottom: 24px;
     overflow: hidden;
     border-radius: 16px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    mix-blend-mode: multiply;
+    z-index: 10;
 }
 
 .card-img {
@@ -292,4 +340,447 @@ footer p {
 
 .card {
     animation: reveal 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Comparison Table Styles */
+.comparison-section {
+    margin-top: 60px;
+    padding: 60px 40px;
+    animation: reveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, var(--text-main), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comparison-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-container {
+    background: var(--bg-card);
+    border-radius: 20px;
+    padding: 1px;
+    border: 2px solid transparent;
+    background-image: 
+        linear-gradient(var(--bg-card), var(--bg-card)),
+        linear-gradient(135deg, var(--primary), var(--accent));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 25px 70px rgba(79, 70, 229, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+}
+
+.table-container:hover {
+    border-color: var(--primary-light);
+    box-shadow: 0 30px 80px rgba(79, 70, 229, 0.12);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.comparison-table thead tr {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.comparison-table th {
+    padding: 18px 14px;
+    text-align: center;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.comparison-table th:first-child {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.th-producto {
+    min-width: 200px;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
+}
+
+.comparison-table td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    color: var(--text-main);
+    transition: var(--transition);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.comparison-table td:first-child {
+    text-align: left;
+}
+
+.comparison-table tbody tr {
+    transition: var(--transition);
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.comparison-table tbody tr:hover td {
+    text-shadow: 0 0 0.5px rgba(79, 70, 229, 0.1);
+}
+
+.comparison-table tbody tr.highlight {
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.04) 0%, rgba(79, 70, 229, 0.02) 100%);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Product Column Styles */
+.td-product {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.td-sticky {
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 5;
+}
+
+.tr-xiaomi .td-sticky {
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.03) 0%, white 100%);
+}
+
+.tr-huawei .td-sticky {
+    background: linear-gradient(90deg, rgba(6, 182, 212, 0.03) 0%, white 100%);
+}
+
+.tr-samsung .td-sticky {
+    background: linear-gradient(90deg, rgba(49, 46, 129, 0.03) 0%, white 100%);
+}
+
+.tr-garmin .td-sticky {
+    background: linear-gradient(90deg, rgba(180, 83, 9, 0.03) 0%, white 100%);
+}
+
+.tr-fitbit .td-sticky {
+    background: linear-gradient(90deg, rgba(157, 23, 77, 0.03) 0%, white 100%);
+}
+
+.tr-ruimen .td-sticky {
+    background: linear-gradient(90deg, rgba(12, 74, 110, 0.03) 0%, white 100%);
+}
+
+.tr-google .td-sticky {
+    background: linear-gradient(90deg, rgba(31, 41, 55, 0.03) 0%, white 100%);
+}
+
+.tr-xiaomi.highlight .td-sticky {
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.08) 0%, rgba(79, 70, 229, 0.02) 100%);
+}
+
+.brand-badge {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.brand-badge.xiaomi {
+    background: #eff6ff;
+    color: #4f46e5;
+}
+
+.brand-badge.huawei {
+    background: #ecf9ff;
+    color: #06b6d4;
+}
+
+.brand-badge.apple {
+    background: #f3f4f6;
+    color: #000;
+}
+
+.brand-badge.samsung {
+    background: #e0e7ff;
+    color: #312e81;
+}
+
+.brand-badge.garmin {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.brand-badge.fitbit {
+    background: #fce7f3;
+    color: #9d174d;
+}
+
+.brand-badge.ruimen {
+    background: #dbeafe;
+    color: #0c4a6e;
+}
+
+.brand-badge.google {
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Price Styles */
+.td-price {
+    min-width: 110px;
+}
+
+.price-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+}
+
+.price-badge.price-best {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+}
+
+.price-badge.price-low {
+    background: linear-gradient(135deg, #06b6d4, #22d3ee);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.2);
+}
+
+.price-badge.price-premium {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+}
+
+/* Rating Styles */
+.td-rating {
+    min-width: 90px;
+}
+
+.rating-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    background: #fef3c7;
+    color: #92400e;
+    border: 2px solid #fcd34d;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rating-badge.rating-46,
+.rating-badge.rating-45,
+.rating-badge.rating-48,
+.rating-badge.rating-47 {
+    background: linear-gradient(135deg, #fef08a, #fef3c7);
+    border-color: #fbbf24;
+}
+
+.rating-badge.rating-44 {
+    background: linear-gradient(135deg, #fef9e7, #fef3c7);
+    border-color: #f59e0b;
+}
+
+.rating-badge.rating-41,
+.rating-badge.rating-40 {
+    background: linear-gradient(135deg, #fef5e7, #fef3c7);
+    border-color: #d97706;
+}
+
+.rating-badge.rating-39 {
+    background: linear-gradient(135deg, #f5f3ff, #fef3c7);
+    border-color: #b45309;
+}
+
+/* Specifications Styles */
+.td-specs {
+    min-width: 140px;
+}
+
+.spec-value {
+    display: block;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.spec-res {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* Battery Styles */
+.td-battery {
+    min-width: 110px;
+}
+
+.battery-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #dbeafe, #e0e7ff);
+    color: #3730a3;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.battery-badge.best {
+    background: linear-gradient(135deg, #ccfbf1, #a7f3d0);
+    color: #065f46;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+
+/* Sensors Styles */
+.td-sensors {
+    max-width: 200px;
+}
+
+.sensors-list {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    color: var(--text-main);
+}
+
+/* Water Resistance Styles */
+.td-water {
+    min-width: 90px;
+}
+
+.water-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, #dbeafe, #cffafe);
+    color: #0c4a6e;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* Weight Styles */
+.td-weight {
+    min-width: 80px;
+    font-weight: 700;
+}
+
+/* Calls Styles */
+.td-calling {
+    min-width: 100px;
+}
+
+.calling-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.calling-badge.no {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.calling-badge.yes {
+    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    color: #16a34a;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1200px) {
+    .comparison-table th,
+    .comparison-table td {
+        padding: 16px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th {
+        font-size: 0.75rem;
+    }
+    
+    .brand-badge {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        border-radius: 16px;
+        border: 1px solid #eef2f6;
+    }
+    
+    .comparison-table {
+        font-size: 0.8rem;
+    }
+    
+    .comparison-table th {
+        padding: 12px 8px;
+        font-size: 0.65rem;
+    }
+    
+    .comparison-table td {
+        padding: 12px 8px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+    
+    .comparison-section {
+        margin-top: 60px;
+        padding: 30px 20px;
+    }
+    
+    .price-badge {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .rating-badge {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .spec-value {
+        font-size: 0.85rem;
+    }
 }

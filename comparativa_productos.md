@@ -1,0 +1,4 @@
+| Producto                | Precio     | Calificación | Pantalla               | Batería         | Sensores                          | Resistencia al Agua | Peso   | Llamadas |
+|-------------------------|------------|--------------|------------------------|-----------------|-----------------------------------|---------------------|--------|----------|
+| XIAOMI Smart Band 9 Pro | 60.62 USD  | 4.6          | 1.74" AMOLED (336x480) | Hasta 21 días   | GPS (GNSS), FC, SpO2, Brújula    | 5ATM (50m)          | 24.5g  | No       |
+| XIAOMI Smartband 10     | 42.50 USD  | 4.6          | 1.72" AMOLED (212x520) | Hasta 22 días   | Brújula, FC, SpO2, Acelerómetro  | 5ATM (50m)          | 15.9g  | No       |

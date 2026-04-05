@@ -7,14 +7,23 @@
     "description": "XIAOMI Smart Band 9 Pro - Pulsera de Actividad, autonomía de hasta 21 días, Pantalla AMOLED de 1,74 pulgadas con tasa de refresco de 60 Hz, 5ATM, App Mi Fitness, Plata (Versión ES)",
     "images": [
       "https://m.media-amazon.com/images/I/61wimACne+L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/516mG98N0lL._AC_SL1500_.jpg"
+      "https://m.media-amazon.com/images/I/71NfC9B5gML._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71QSh4uViQL._AC_SL1500_.jpg"
     ],
     "url": "https://amzn.to/4bXkAv2",
     "specs": [
       "Autonomía ultra larga de hasta 21 días",
       "Gestión de salud multidimensional",
       "Experiencia de usuario mejorada"
-    ]
+    ],
+    "comparison_specs": {
+      "display": "1.74\" AMOLED (336x480)",
+      "battery": "Hasta 21 días",
+      "sensors": "GPS (GNSS), FC, SpO2, Brújula",
+      "water": "5ATM (50m)",
+      "weight": "24.5g",
+      "calling": "No"
+    }
   },
   {
     "id": "xiaomi-smartband-10",
@@ -24,14 +33,23 @@
     "description": "Xiaomi Smartband 10, Pantalla AMOLED de 1,72”, Carga rápida, 150+ Modos Deportivos, Monitorización de Salud y sueño, HyperOS 2.0, Impermeable 5ATM, Brújula",
     "images": [
       "https://m.media-amazon.com/images/I/51bkPDf8dUL._AC_SL1000_.jpg",
-      "https://m.media-amazon.com/images/I/51S47H7YfPL._AC_SL1000_.jpg"
+      "https://m.media-amazon.com/images/I/51Nb8CUQtZL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/51k2QUTLU3L._AC_SL1000_.jpg"
     ],
     "url": "https://amzn.to/4bOPOUV",
     "specs": [
       "Carga Solar",
       "Mapas",
       "22 días batería"
-    ]
+    ],
+    "comparison_specs": {
+      "display": "1.72\" AMOLED (212x520)",
+      "battery": "Hasta 22 días",
+      "sensors": "Brújula, FC, SpO2, Acelerómetro",
+      "water": "5ATM (50m)",
+      "weight": "15.9g",
+      "calling": "No"
+    }
   },
   {
     "id": "huawei-band-10",
@@ -41,14 +59,23 @@
     "description": "HUAWEI Band 10 Smartwatch, Monitorización de Actividad Física con IA, Análisis del Sueño a Nivel Profesional, VFC Promedio y Datos sobre el Sueño, iOS & Android, 14 Días de Autonomía, Negro",
     "images": [
       "https://m.media-amazon.com/images/I/61VZkWamWRL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61M-7i7q7JL._AC_SL1500_.jpg"
+      "https://m.media-amazon.com/images/I/61oSDs20BwL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81S4rMqnJ4L._AC_SL1500_.jpg"
     ],
     "url": "https://amzn.to/4c9mXMt",
     "specs": [
       "Cómoda de usar durante todo el día",
       "Análisis del sueño a nivel profesional",
       "Monitorización con IA"
-    ]
+    ],
+    "comparison_specs": {
+      "display": "1.47\" AMOLED (194x368)",
+      "battery": "Hasta 14 días",
+      "sensors": "IMU 9 ejes, FC, SpO2 (No GPS)",
+      "water": "5ATM (50m)",
+      "weight": "14g",
+      "calling": "No"
+    }
   },
   {
     "id": "huawei-band-11-pro",
@@ -58,14 +85,23 @@
     "description": "HUAWEI Band 11 Pro Smartwatch, 1,62″ AMOLED 2000 Nits, Posicionamiento GNSS Independiente, Frecuencia Cardíaca y SPO₂, Bienestar Emocional, 5 ATM Resistencia al Agua, Bluetooth, Android & iOS",
     "images": [
       "https://m.media-amazon.com/images/I/717glctSu8L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/71EUnS7N51L._AC_SL1500_.jpg"
+      "https://m.media-amazon.com/images/I/71kkJEJf-eL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81nyrK0IQFL._AC_SL1500_.jpg"
     ],
     "url": "https://amzn.to/4rZwiLu",
     "specs": [
       "Un Diseño Metálico Limpio tan Delgado como Es Posible",
       "Un Gran Avance en Precisión Deportiva GNSS",
       "Seguimiento del Sueño Mejorado"
-    ]
+    ],
+    "comparison_specs": {
+      "display": "1.62\" AMOLED (286x482)",
+      "battery": "Hasta 14 días",
+      "sensors": "GPS (GNSS), FC, SpO2, IMU 9 ejes",
+      "water": "5ATM (50m)",
+      "weight": "18g",
+      "calling": "No"
+    }
   },
   {
     "id": "xiaomi-smart-band-9-active",
@@ -75,14 +111,22 @@
     "description": "XIAOMI Smart Band 9 Active - Pulsera de Actividad, autonomía de hasta 18 días, Pantalla TFT de 1,47 pulgadas con tasa de refresco de 60 Hz, 5ATM, App Mi Fitness, (Versión ES)",
     "images": [
       "https://m.media-amazon.com/images/I/61W47BWxlCL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/615aZ8-J8VL._AC_SL1500_.jpg"
+      "https://m.media-amazon.com/images/I/412cSTqiQQL._AC_.jpg"
     ],
     "url": "https://amzn.to/4uZXi03",
     "specs": [
       "Pantalla TFT de 1,47 pulgadas para una interacción fluida",
       "Hasta 18 días de duración de la batería para un uso diario normal",
       "Vigilancia de salud constante"
-    ]
+    ],
+    "comparison_specs": {
+      "display": "1.47\" TFT (172x320)",
+      "battery": "Hasta 18 días",
+      "sensors": "FC, SpO2, Acelerómetro",
+      "water": "5ATM (50m)",
+      "weight": "16.5g",
+      "calling": "No"
+    }
   },
   {
     "id": "xiaomi-redmi-watch-5-active",
@@ -92,13 +136,150 @@
     "description": "XIAOMI Redmi Watch 5 Active, Llamadas Bluetooth, Pantalla LCD de 2 Pulgadas, Monitor de frecuencia cardíaca, 140 Modos Deportivos, hasta 18 días de autonomía",
     "images": [
       "https://m.media-amazon.com/images/I/6138IWGtvHL._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/61G4W-v7S9L._AC_SL1500_.jpg"
+      "https://m.media-amazon.com/images/I/61jXHpZLhiL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/51hAiU6NfpL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/51+8FpLX5kL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/51iP9XCdlCL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/513vY8YC5YL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/512-cX4uWGL._AC_SL1000_.jpg"
     ],
     "url": "https://amzn.to/4tb4J2L",
     "specs": [
       "Pantalla AMOLED Ultra grande de 1.96 pulgadas",
       "Batería de larga duración; hasta 18 días en modo estándar",
       "Seguimiento avanzado de salud y entrenamiento"
-    ]
+    ],
+    "comparison_specs": {
+      "display": "2\" LCD (320x385)",
+      "battery": "Hasta 18 días",
+      "sensors": "FC, SpO2, Acelerómetro, Estrés",
+      "water": "5ATM (50m)",
+      "weight": "30.6g",
+      "calling": "Si (Bluetooth)"
+    }
+  },
+  {
+    "id": "ruimen-smartwatch",
+    "name": "RUIMEN Smartwatch",
+    "price": "45.99 USD",
+    "rating": 4.4,
+    "description": "RUIMEN Smartwatch - Smartwatch inteligente con Bluetooth, Pulsómetro, Monitor de sueño, Resistencia 5ATM, múltiples modos deportivos, notificaciones de llamadas y mensajes, batería 7-10 días",
+    "images": [
+      "https://m.media-amazon.com/images/I/61h5YwjrqyL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71qfnHHZQBL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61BKgnmmmPL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71-QBvaCFlL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61V6tn0rlAL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71SvPrw978L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71IPCcAzimL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61-pAS-BDhL._AC_SL1500_.jpg"
+    ],
+    "url": "https://amzn.to/4uYdW02",
+    "specs": [
+      "Pulsómetro en tiempo real",
+      "Monitor de sueño inteligente",
+      "Múltiples modos deportivos"
+    ],
+    "comparison_specs": {
+      "display": "1.3\" TFT LCD (240x240)",
+      "battery": "Hasta 10 días",
+      "sensors": "FC, SpO2, Acelerómetro",
+      "water": "5ATM (50m)",
+      "weight": "28g",
+      "calling": "No"
+    }
+  },
+  {
+    "id": "google-fitbit-charge-6",
+    "name": "Google Fitbit Charge 6",
+    "price": "148.00 USD",
+    "rating": 3.9,
+    "description": "Google Fitbit Charge 6 Activity Tracker - Pulsera de actividad con batería de 7 días, GPS integrado, ECG, Google Wallet, Google Maps, YouTube Music, notificaciones inteligentes, resistencia 50m",
+    "images": [
+      "https://m.media-amazon.com/images/I/61q3X9VBABL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81ZVFpUvM2L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/819Ny8fis9L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71QBRKLRcNL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81YoCrNoRWL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71aI2TSrYzL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71aI2TSrYzL._AC_SL1500_.jpg"
+    ],
+    "url": "https://amzn.to/4s7TeZh",
+    "specs": [
+      "Google Wallet NFC integrado",
+      "Google Maps y YouTube Music",
+      "Monitorización avanzada de salud"
+    ],
+    "comparison_specs": {
+      "display": "1.4\" LCD Color (240x102)",
+      "battery": "Hasta 7 días",
+      "sensors": "GPS, FC, ECG, EDA, SpO2",
+      "water": "50m",
+      "weight": "3g",
+      "calling": "No"
+    }
+  },
+  {
+    "id": "fitbit-inspire-3",
+    "name": "Fitbit Inspire 3",
+    "price": "92.13 USD",
+    "rating": 4.1,
+    "description": "Fitbit Inspire 3 - Pulsera de actividad ligera y cómoda, batería 10 días, monitorización de salud completa, seguimiento de estrés, salud menstrual, sleep tracking avanzado, resistencia 50m",
+    "images": [
+      "https://m.media-amazon.com/images/I/61L0PwmrftL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61-KFtonm0L._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/61WdjEHe7mL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71uyMWh1b1L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81w-xU8pJDL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71V4bHqaFaL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71IIlmQZHXL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61G9skAMdgL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71S4CXxO8kL._AC_SL1500_.jpg"
+    ],
+    "url": "https://amzn.to/3PFTvVJ",
+    "specs": [
+      "Diseño ultraligero y discreto",
+      "Monitoreo de salud menstrual",
+      "Sleep tracking con fases avanzadas"
+    ],
+    "comparison_specs": {
+      "display": "0.78\" AMOLED",
+      "battery": "Hasta 10 días",
+      "sensors": "FC, SpO2, Estrés, Salud menstrual",
+      "water": "50m",
+      "weight": "110g",
+      "calling": "No"
+    }
+  },
+  {
+    "id": "fitbit-versa-4",
+    "name": "Google Fitbit Versa 4",
+    "price": "195.45 USD",
+    "rating": 4.0,
+    "description": "Google Fitbit Versa 4 - Reloj inteligente diseñado para optimizar tu rutina de ejercicio. Cuenta con GPS integrado, más de 40 modos de ejercicio, monitorización del ritmo cardiaco 24/7 y aplicaciones de Google como Maps y Wallet.",
+    "images": [
+      "https://m.media-amazon.com/images/I/61FBh9cwUFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61ZZegIbALL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/7144R5upYGL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/810dJ8XG5BL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71yHwYqXDKL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71LiCgXBZ1L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61uj80gXWSL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Cj5Tqp4UL._AC_SL1500_.jpg"
+    ],
+    "url": "https://amzn.to/3O0BwsE",
+    "specs": [
+      "GPS integrado para ritmo y distancia",
+      "Más de 6 días de batería y carga rápida",
+      "Llamadas Bluetooth y notificaciones"
+    ],
+    "comparison_specs": {
+      "display": "1.58\" AMOLED (336x336)",
+      "battery": "Hasta 6 días",
+      "sensors": "GPS, FC, SpO2, Altímetro",
+      "water": "50m (5ATM)",
+      "weight": "37.6g",
+      "calling": "Si (Bluetooth)"
+    }
   }
 ]

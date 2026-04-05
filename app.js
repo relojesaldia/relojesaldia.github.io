@@ -2,7 +2,7 @@ const app = document.getElementById('app');
 
 async function loadProducts() {
   try {
-    const response = await fetch('products.json');
+    const response = await fetch('products.json?t=' + Date.now());
     const products = await response.json();
     
     let html = '';
@@ -17,7 +17,7 @@ async function loadProducts() {
              alt="${p.name} - Vista ${i + 1}" 
              class="card-img ${i === 0 ? 'active' : ''}" 
              data-index="${i}"
-             onerror="this.src='https://via.placeholder.com/300x250?text=Reloj+Premium'">
+             onerror="this.src='https://placehold.co/300x250/4f46e5/ffffff?text=Reloj+Premium'">
       `).join('');
 
       const dotsHtml = p.images.length > 1 ? `
@@ -52,6 +52,9 @@ async function loadProducts() {
 
     app.innerHTML = html;
     
+    // Generar tabla comparativa
+    renderComparisonTable(products);
+
     // Inyectar datos estructurados (JSON-LD) para SEO
     injectJSONLD(products);
 
@@ -148,6 +151,56 @@ function injectJSONLD(products) {
     document.head.appendChild(script);
   }
   script.text = JSON.stringify(jsonLd);
+}
+
+function renderComparisonTable(products) {
+  const table = document.getElementById('comparison-table');
+  if (!table) return;
+
+  const specs = [
+    { label: 'Pantalla', key: 'display' },
+    { label: 'Batería', key: 'battery' },
+    { label: 'Sensores', key: 'sensors' },
+    { label: 'Agua', key: 'water' },
+    { label: 'Peso', key: 'weight' },
+    { label: 'Llamadas BT', key: 'calling' }
+  ];
+
+  let html = `
+    <thead>
+      <tr>
+        <th class="spec-label">Característica</th>
+        ${products.map(p => `
+          <th>
+            <div class="table-product-name">
+              <img src="${p.images[0]}" class="table-product-img" alt="${p.name}">
+              ${p.name.split(' ').slice(1).join(' ')}
+            </div>
+          </th>
+        `).join('')}
+      </tr>
+    </thead>
+    <tbody>
+  `;
+
+  specs.forEach(spec => {
+    html += `
+      <tr>
+        <td class="spec-label">${spec.label}</td>
+        ${products.map(p => {
+          const val = p.comparison_specs[spec.key];
+          let cellClass = '';
+          if (spec.key === 'calling') {
+            cellClass = val.toLowerCase().includes('si') ? 'calling-yes' : 'calling-no';
+          }
+          return `<td class="${cellClass}">${val}</td>`;
+        }).join('')}
+      </tr>
+    `;
+  });
+
+  html += '</tbody>';
+  table.innerHTML = html;
 }
 
 loadProducts();
